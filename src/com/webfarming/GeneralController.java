@@ -33,10 +33,12 @@ public class GeneralController {
 		List<InlineKeyboardButton> row2 = new LinkedList<>();
 		List<InlineKeyboardButton> row3 = new LinkedList<>();
 		List<InlineKeyboardButton> row4 = new LinkedList<>();
+		List<InlineKeyboardButton> row5 = new LinkedList<>();
 		row1.add(generateUrlButton("Live Support", "https://telegram.me/gijimadurban"));
 		row2.add(generateButton("Message my Freight Manager", "/message_freight_manager"));
 		row3.add(generateUrlButton("Contact Us", "https://gijimadeliveries.co.za/contact-us/"));
 		row4.add(generateUrlButton("Join Gijima Deliveries Channel", "http://t.me/gijimadeliveries"));
+		row5.add(generateUrlButton("Request Waybill", "https://gijimams.webfarming.co.za/?p=waybill_quote_request"));
 
 		// Add Rows
 		List<List<InlineKeyboardButton>> rowCollection = new LinkedList<>();
@@ -44,6 +46,7 @@ public class GeneralController {
 		rowCollection.add(row2);
 		rowCollection.add(row3);
 		rowCollection.add(row4);
+		rowCollection.add(row5);
 
 		// Keyboard
 		InlineKeyboardMarkup inlineKeyboardMarkup = new InlineKeyboardMarkup();
